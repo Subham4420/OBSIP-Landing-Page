@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linc Pens</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="linc logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br> <span> I like</span></h2>
+                &nbsp &nbsp<b><p><h3>PENTONIC</h3>Driven By Design</p></b>
+                    <a href="#"><b>View All Products </b></a>
+            </div>
+            <div class="imgBox">
+                <img src="pentonic.png" class="pen">
+    
+            </div>
+            
+        </div>
+        <ul class="thumb">
+            <li><img src="pentonic.png" onclick="imgSlider('pentonic.png'); changeBgColor('#0062be')"></li>
+            <li><img src="Pentonic_Ball_-.png "onclick="imgSlider('Pentonic_Ball_-.png'); changeBgColor('#C11431')"></li>
+            <li><img src="pentonic set.png" onclick="imgSlider('pentonic set.png'); changeBgColor('#1e1e1e')"></li>
+        </ul>
+
+        <ul class="med">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+        </ul>
+        
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything)
+        {
+            document.querySelector('.pen').src = anything;
+        }
+
+        function changeBgColor(color)
+        {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
